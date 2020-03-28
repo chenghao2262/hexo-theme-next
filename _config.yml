@@ -104,11 +104,22 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
-
+avatar:
+  # 头像资源路径，可以在主题目录下，也可以在站点目录，还可以是网络链接
+  # 将头像放至主题目录下 (source/images): /images/avatar.gif
+  # 将头像放至站点目录下 (source/uploads): /uploads/avatar.gif
+  # 或者任何头像URL: http(s)://example.com/avatar.png
+  url: /uploads/header.jpg
+  # 如果为 true, 头像将会显示为圆形.
+  rounded: true
+  # 头像透明度，取值从0到1,1表示完全不透明.
+  opacity: 0.7
+  # 如果为 true, 当光标移动至头像时，头像会旋转.
+  rotated: false
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -146,8 +157,8 @@ scheme: Mist
 
 sidebar:
   # Sidebar Position.
-  position: left
-  #position: right
+  #position: left
+  position: right
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
   # Pisces | Gemini: 240
